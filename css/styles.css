@@ -12,16 +12,21 @@
     position: absolute;
     top: 45vh;
 }
-#text-header > h2{
+#text-header > p{
     width: max-content;
     border-radius: 11px;
+    transition: all .25s ease-in-out;
+}
+#text-header > p:hover{
+    text-shadow: -3px 3px rgb(68, 68, 68);
+    animation-fill-mode: forwards;
 }
 #botones-header > .nav-item > .nav-link{
     border-radius: 8px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 #botones-header > .nav-item > .nav-link:hover{
     background-color: rgba(169, 169, 169, 0.4);
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     animation-fill-mode: forwards;
 }
 #title-header-reflect{
@@ -51,21 +56,24 @@
 }
 #cards-acercade > .card > img{
     width: max-content;
-    transition: transform .35s;
+    transition: transform .45s;
 }
 #cards-acercade > .card > img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #cards-casas > .card{
     width: 25rem;
 }
-#cards-casas > .card > img{
-    transition: all .35s;
+#card-img-container{
+    display: inline-block;
+    overflow: hidden;
 }
-#cards-casas > .card > img:hover{
-    box-shadow: -5px 5px rgb(155, 155, 155);
-    transform: scale(1.03);
-    filter: blur(25%);
+#card-img-container > img{
+    display: block;
+    transition: all .45s;
+}
+#card-img-container > img:hover{
+    transform: scale(1.15);
 }
 .bg-gray{
     background-color: #f1f1f1;
