@@ -9,28 +9,36 @@
     position: relative;
 }
 #text-header{
-    margin-top: 35vh;
+    position: absolute;
+    top: 45vh;
 }
 #text-header > h2{
     width: max-content;
     border-radius: 11px;
 }
-#botones-header > .nav-item{
+#botones-header > .nav-item > .nav-link{
     border-radius: 8px;
 }
-#botones-header > .nav-item:hover{
-    animation: bg-white 0.3s ease-in;
+#botones-header > .nav-item > .nav-link:hover{
+    background-color: rgba(169, 169, 169, 0.4);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     animation-fill-mode: forwards;
-}
-@keyframes bg-white{
-    100%{
-        background-color: rgba(169, 169, 169, 0.4);
-    }
 }
 #title-header-reflect{
     margin-top: -2.9vh;
     transform: rotateX(180deg);
     opacity: 0.18;
+}
+
+@media screen and (width:1024px){
+    #container-botones-header{
+        width: 40vw;
+    }
+}
+@media screen and (width:768px){
+    #botones-header{
+        gap: 0!important;
+    }
 }
  
 /* Main */
@@ -82,7 +90,7 @@
 }
 #main-contacto-carousel-text{
     position: absolute;
-    top: 130rem;
+    top: 8rem;
     left: 13vw;
 }
 .btn-carousel{
@@ -116,6 +124,120 @@
     padding-top: 5vh;
 }
 
+@media screen and (width:1440px){
+    #btn-card-anuncio{
+        width: 25.4vw;
+    }
+    #boton-tarjetas{
+        margin-right: 6.45vw!important;
+    }
+}
+
+@media screen and (width:1024px){
+    #card3-text-precio{
+        padding-top: 6.80vh;
+    }
+    #btn-card-anuncio{
+        width: 26.3vw;
+    }
+    #boton-tarjetas{
+        margin-right: 3.2vw!important;
+    }
+    #carousel-first-image{
+        height: 55vh;
+    }
+    .btn-carousel{
+        width: 15vw;
+    }
+    #main-contacto-carousel-text{
+        top: 7rem;
+    }
+    #blog-card-text > .col > img{
+        width: 240px;
+        height: 215px;
+    }
+    .contenedor-comentarios{
+        height: 63vh;
+    }
+    #text-comentarios{
+        font-size: 25px!important;
+        padding-left: 1vw;
+    }
+    #text-comentarios-autor{
+        font-size: 22px!important;
+    }
+}
+
+@media screen and (width:768px){
+    #contenedor-iconos-card{
+        gap: 0.5rem!important;
+    }
+    .card-title{
+        font-size: 18px!important;
+    }
+    .card-text{
+        font-size: 13px!important;
+    }
+    #card1-text-precio{
+        padding-top: 2.7vh;
+    }
+    #card3-text-precio{
+        padding-top: 2.55vh;
+    }
+    #btn-card-anuncio{
+        width: 24.5vw;
+    }
+    #boton-tarjetas{
+        margin-right: 3vw!important;
+        padding-left: 6.4vw;
+    }
+    #carousel-first-image{
+        height: 44.7vh;
+    }
+    #main-contacto-carousel-text{
+        top: 6rem;
+    }
+    #main-contacto-carousel{
+        height: 45vh;
+    }
+    .btn-carousel{
+        width: 22vw;
+    }
+    #blog-card-text > .col > img{
+        width: 180px;
+        height: 160px;
+    }
+    #blog-card-img{
+        width: 180px;
+        height: 160px;
+    }
+    #infoblog-texto{
+        padding-top: 0px;
+    }
+    #infoblog-texto > h5{
+        font-size: 19px!important;
+        margin-bottom: 0px;
+    }
+    #infoblog-texto > p{
+        font-size: 13px!important;
+        margin-bottom: 0px;
+    }
+    .contenedor-comentarios{
+        height: 50vh;
+    }
+    .contenedor-comentarios > .row{
+        padding-top: 2vh!important;
+    }
+    #text-comentarios{
+        font-size: 19px!important;
+        padding-left: 1vw;
+    }
+    #text-comentarios-autor{
+        font-size: 19px!important;
+        padding-bottom: 2vh!important;
+    }
+}
+
 /* footer */
 footer{
     background: rgb(51,51,51);
@@ -127,6 +249,19 @@ footer{
     border-radius: 8px;
 }
 #nav-footer-links > .nav-link:hover{
-    animation: bg-white 0.3s ease-in;
+    background-color: rgba(169, 169, 169, 0.4);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     animation-fill-mode: forwards;
+}
+@media screen and (width:768px){
+    #nav-footer-links{
+        gap: 0.3rem!important;
+    }
+    #nav-footer-links > .nav-link{
+        font-size: 14px!important;
+        width: 8vw!important;
+    }
+    footer > p{
+        font-size: 14px!important;
+    }
 }
