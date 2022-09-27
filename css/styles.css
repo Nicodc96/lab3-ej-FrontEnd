@@ -51,9 +51,21 @@
 }
 #cards-acercade > .card > img{
     width: max-content;
+    transition: transform .35s;
+}
+#cards-acercade > .card > img:hover{
+    transform: scale(1.2);
 }
 #cards-casas > .card{
     width: 25rem;
+}
+#cards-casas > .card > img{
+    transition: all .35s;
+}
+#cards-casas > .card > img:hover{
+    box-shadow: -5px 5px rgb(155, 155, 155);
+    transform: scale(1.03);
+    filter: blur(25%);
 }
 .bg-gray{
     background-color: #f1f1f1;
@@ -107,9 +119,6 @@
 #bgDark{
     filter: brightness(45%);
 }
-#infoblog-texto{
-    padding-top: 1vh;
-}
 .texto-naranja{
     color: #e08709;
 }
@@ -122,6 +131,22 @@
 }
 #text-comentarios-autor{
     padding-top: 5vh;
+}
+#blog-card-img{
+    width: 350px;
+    height: auto;
+}
+#blog-card-img > img{
+    transition: transform 1s;
+}
+#blog-card-img > img:hover{
+    transform: scale(1.1);
+}
+#blog-card-text{
+    border-radius: 10px;
+}
+#blog-card-text:hover{
+    background-color: #f1f1f1;
 }
 
 @media screen and (width:1440px){
@@ -203,10 +228,10 @@
     .btn-carousel{
         width: 22vw;
     }
-    #blog-card-text > .col > img{
+    /* #blog-card-text > .col > img{
         width: 180px;
         height: 160px;
-    }
+    } */
     #blog-card-img{
         width: 180px;
         height: 160px;
