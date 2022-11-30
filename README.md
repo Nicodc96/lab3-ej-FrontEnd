@@ -9,5 +9,5 @@
 <p> El proyecto consiste en diseñar la página principal que se encuentra debajo utilizando las herramientas aprendidas durante la cursada (HTML, CSS & Bootstrap). Optativamente se podrá agregar funcionalidad aplicando lo aprendido de JavaScript también durante la cursada y diseño responsive.
 </p>
 <div align="center">
-<img src="https://i.ibb.co/3NYXfn9/inmobiliaria.png" longdesc="" width="480" height="1000">
+<img src="https://i.ibb.co/fH9p91P/inmobiliaria-1.png" longdesc="" width="480" height="1000">
 </div>
